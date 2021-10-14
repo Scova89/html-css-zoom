@@ -87,12 +87,35 @@ body{
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
+   
 }
 
 .container-foto .foto{
+    display: flex;
     width: calc(100% / 5 - 5px);
     height: calc(100% / 5 - 5px);
+    background-image: url(https://media.giphy.com/media/1d7F9xyq6j7C1ojbC5/giphy.gif);
+    background-size: cover;
+    position: relative;
 }
+
+
+.container-foto .foto i{
+    margin-right: 7px;
+}
+
+
+.container-foto .foto span{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    padding: 5px 5px;
+    background-color: rgba(0, 0, 0, 0.5);
+    font-size: 11pt;
+    color: white;
+}
+
+
 
 
 /* footer */
@@ -109,13 +132,13 @@ footer{
     background-color: aqua;
 } */
 
-.debug .container-foto{
+/* .debug .container-foto{
     background-color: chartreuse;
-}
+} */
 
-.debug .foto{
+/* .debug .foto{
     background-color: blue;
-}
+} */
 
 .debug footer{
     background-color: crimson;
