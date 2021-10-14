@@ -14,10 +14,15 @@ body{
 /* schermata principale */
 
 .main-container{
+    background-color: black;
     width: 100%;
-    height: calc(100vh - 90px);
+    height: calc(100vh - 70px);
     display: flex;
 }
+
+
+
+/* pulsanti in alto a destra */
 
 .pulsanti{
     position: absolute;
@@ -39,19 +44,77 @@ body{
 
 
 
+/* frecce laterali */
+
+
+.freccia{
+    display: flex;
+    color: white;
+    width: 20px;
+    flex-direction: column;
+}
+
+.freccia .fa-caret-left{
+    color: lightgray;
+    font-size: 35pt;
+}
+
+.freccia.snt{
+    margin-left: 20px;
+    justify-content: center;
+}
+
+.freccia .fa-caret-right{
+    color: rgb(15, 207, 255);
+    font-size: 35pt;
+}
+
+.freccia.dst{
+    margin-right: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* foto */
+
+.container-foto{
+    width: 95%;
+    height: calc(90vh - 70px) ;
+    margin: 20px;
+    align-self: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container-foto .foto{
+    width: calc(100% / 5 - 5px);
+    height: calc(100% / 5 - 5px);
+}
+
 
 /* footer */
 
 footer{
     width: 100%;
-    height: 90px;
+    height: 70px;
 }
 
 
 /* debug */
 
-.debug .main-container{
+/* .debug .main-container{
     background-color: aqua;
+} */
+
+.debug .container-foto{
+    background-color: chartreuse;
+}
+
+.debug .foto{
+    background-color: blue;
 }
 
 .debug footer{
